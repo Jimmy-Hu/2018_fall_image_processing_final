@@ -10,6 +10,10 @@
     path = module/opencv
     url = https://github.com/opencv/opencv
 
+[submodule "module/fmt"]
+    path = module/fmt
+    url = https://github.com/fmtlib/fmt
+
 [submodule "module/segmenter"]
     path = module/segmenter
 	  url = https://github.com/cy20lin/2018_fall_image_processing_final_api_segmenter
