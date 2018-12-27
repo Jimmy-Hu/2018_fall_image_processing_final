@@ -6,6 +6,10 @@
     path = submodule/imgui
     url = https://github.com/Flix01/imgui
 
+[submodule "module/segmenter/submodule/CImg"]
+    path = module/segmenter/submodule/CImg
+    url = https://github.com/dtschump/CImg
+
 [submodule "module/opencv"]
     path = module/opencv
     url = https://github.com/opencv/opencv
