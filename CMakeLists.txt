@@ -59,8 +59,10 @@ set(Boost_COMPONENTS
   )
 
 find_package(Boost REQUIRED COMPONENTS ${Boost_COMPONENTS})
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/module/fmt")
 find_package(fmt CONFIG)
 find_package(date CONFIG)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/module/opencv")
 find_package(OpenCV REQUIRED)
 find_package(Qt5Widgets CONFIG)
 find_package(Qt5Core CONFIG)
