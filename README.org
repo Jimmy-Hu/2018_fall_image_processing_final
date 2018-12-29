@@ -27,7 +27,7 @@ This is the final project for the 2018 Image Processing Course at NTUT.
 * Prepare the source
 
   #+BEGIN_SRC sh
-    git clone https://github.com/cy20lin/2018_fall_image_processing_final
+    git clone https://github.com/Jimmy-Hu/2018_fall_image_processing_final
     cd 2018_fall_image_processing_final
     git submodule update --init --recursive
   #+END_SRC
