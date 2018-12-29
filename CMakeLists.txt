@@ -65,7 +65,7 @@ add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/module/fmt")
 set(GFLAGS_ROOT_DIR "" CACHE PATH "${CMAKE_CURRENT_LIST_DIR}/module/gflags")
 find_path(GFLAGS_INCLUDE_DIR gflags/gflags.h
         PATHS ${GFLAGS_ROOT_DIR})
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/module/opencv")
+#add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/module/opencv")
 find_package(OpenCV REQUIRED)
 find_package(Qt5Widgets CONFIG)
 find_package(Qt5Core CONFIG)
