@@ -1,5 +1,6 @@
 build/*
 IgnoredFiles/*
+IgnoredFiles/
 
 .cquery_cached_index
 
