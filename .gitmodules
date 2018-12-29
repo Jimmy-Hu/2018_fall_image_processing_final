@@ -12,7 +12,7 @@
 
 [submodule "module/opencv"]
     path = module/opencv
-    url = https://github.com/opencv/opencv
+    url = https://github.com/Jimmy-Hu/opencv
 
 [submodule "module/fmt"]
     path = module/fmt
