@@ -24,7 +24,7 @@
 
 [submodule "module/segmenter"]
     path = module/segmenter
-	  url = https://github.com/cy20lin/2018_fall_image_processing_final_api_segmenter
+	  url = https://github.com/Jimmy-Hu/2018_fall_image_processing_final_api_segmenter
 
 [submodule "module/opk"]
 	path = module/opk
