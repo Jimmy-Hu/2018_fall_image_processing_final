@@ -36,7 +36,7 @@ include_directories("${CMAKE_CURRENT_LIST_DIR}/include")
 include_directories("${CMAKE_CURRENT_LIST_DIR}/module/segmenter/include")
 include_directories("${CMAKE_CURRENT_LIST_DIR}/module/opk/include")
 include_directories("${CMAKE_CURRENT_LIST_DIR}/module/gui/include")
-
+include_directories("${CMAKE_CURRENT_LIST_DIR}/module/opencv/modules/core/include")
 
 set(Boost_USE_STATIC_LIBS        ON) # only find static libs
 set(Boost_COMPONENTS
@@ -60,8 +60,11 @@ set(Boost_COMPONENTS
 
 find_package(Boost REQUIRED COMPONENTS ${Boost_COMPONENTS})
 add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/module/fmt")
-find_package(fmt CONFIG)
-find_package(date CONFIG)
+#find_package(fmt CONFIG)
+#find_package(date CONFIG)
+set(GFLAGS_ROOT_DIR "" CACHE PATH "${CMAKE_CURRENT_LIST_DIR}/module/gflags")
+find_path(GFLAGS_INCLUDE_DIR gflags/gflags.h
+        PATHS ${GFLAGS_ROOT_DIR})
 add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/module/opencv")
 find_package(OpenCV REQUIRED)
 find_package(Qt5Widgets CONFIG)
@@ -71,9 +74,9 @@ find_package(Threads REQUIRED)
 
 set(packages
   Boost
-  fmt
+#  fmt
   OpenCV
-  date
+#  date
   Qt5Widgets
   Qt5Core
   Threads
